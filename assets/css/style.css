@@ -44,7 +44,6 @@ a {
 }
 
 /* Users name area and username input */
-/* Users name area and username input */
 #user-name-area {
     width: 70%;
     height: 400px;
@@ -63,4 +62,25 @@ a {
     background: rgba(0, 0, 0, 0.0);
     color: white;
     cursor: pointer;
+}
+
+/* Answer Buttons Area and Answers. */
+#answer-area {
+    width: 100%;
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#answer-buttons {
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+/* Start and Next Button area */
+.start-next {
+    width: 70%;
+    text-align: center;
 }
