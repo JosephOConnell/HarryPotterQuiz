@@ -20,3 +20,25 @@ a {
     text-decoration: none;
     color: white;
 }
+
+/* Title */
+.heading {
+    font-family: 'Metal Mania', cursive;
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 6px;
+    width: 70%;
+}
+
+/* Questions CSS */
+.question-area {
+    width: 70%;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+.question-area span {
+    padding-left: 5px;
+}
