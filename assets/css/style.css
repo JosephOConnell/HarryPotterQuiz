@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../images/HP.webp);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
