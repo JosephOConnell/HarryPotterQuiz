@@ -1,3 +1,4 @@
+// Questions and Answers.
 const questions =
     [
         {
@@ -50,8 +51,8 @@ const questions =
             answers: [
                 { text: "1950", correct: false },
                 { text: "1951", correct: false },
-                { text: "1943", correct: true },
                 { text: "1947", correct: false },
+                { text: "1943", correct: true },
             ]
         },
         {
@@ -66,10 +67,10 @@ const questions =
         {
             question: "What colour are Ginny and Gabrielle's bridesmaids dresses?",
             answers: [
+                { text: "gold", correct: true },
                 { text: "Pink", correct: false },
                 { text: "lavendar", correct: false },
                 { text: "blue", correct: false },
-                { text: "gold", correct: true },
             ]
         },
         {
@@ -85,9 +86,9 @@ const questions =
             question: "What fruit do you tickle on the painting to get into the kitchen?",
             answers: [
                 { text: "peach", correct: false },
+                { text: "pear", correct: true },
                 { text: "banana", correct: false },
                 { text: "orange", correct: false },
-                { text: "pear", correct: true },
             ]
         },
         {
@@ -112,17 +113,17 @@ const questions =
             question: "what did Mrs Weasley gift Percy when he became prefect?",
             answers: [
                 { text: "New Robes", correct: false },
-                { text: "An Owl", correct: true },
                 { text: "A New Wizards Chess Set", correct: false },
                 { text: "A Broom", correct: false },
+                { text: "An Owl", correct: true },
             ]
         },
         {
             question: "Who came up with the name Dumbledore's Amry?",
             answers: [
+                { text: "Ginny", correct: true },
                 { text: "Cho", correct: false },
                 { text: "Luna", correct: false },
-                { text: "Ginny", correct: true },
                 { text: "Hermione", correct: false },
             ]
         },
@@ -140,16 +141,16 @@ const questions =
             answers: [
                 { text: "Pomona", correct: false },
                 { text: "Alice", correct: false },
-                { text: "Augusta", correct: true },
                 { text: "Bertha", correct: false },
+                { text: "Augusta", correct: true },
             ]
         },
         {
             question: "what colour are Harry's dress robes which he wears to the yule ball?",
             answers: [
+                { text: "green", correct: true },
                 { text: "black", correct: false },
                 { text: "navy", correct: false },
-                { text: "green", correct: true },
                 { text: "grey", correct: false },
             ]
         },
@@ -184,8 +185,8 @@ const questions =
             question: "whats the entrace code for the ministry of magic?",
             answers: [
                 { text: "69339", correct: false },
-                { text: "54335", correct: false },
                 { text: "62442", correct: true },
+                { text: "54335", correct: false },
                 { text: "87886", correct: false },
             ]
         },
@@ -194,8 +195,8 @@ const questions =
             answers: [
                 { text: "Garrick Ollivandar", correct: false },
                 { text: "Tom the barman", correct: false },
-                { text: "florean Fortescue", correct: true },
                 { text: "madam malkin", correct: false },
+                { text: "florean Fortescue", correct: true },
             ]
         },
         {
@@ -212,25 +213,25 @@ const questions =
             answers: [
                 { text: "Emiline", correct: false },
                 { text: "Bathilda", correct: false },
-                { text: "Amelia", correct: true },
                 { text: "Clementine", correct: false },
+                { text: "Amelia", correct: true },
             ]
         },
         {
             question: "According to Luna, where do Crumpled Horn Snorkacks live?",
             answers: [
                 { text: "Denmark", correct: false },
-                { text: "Finland", correct: false },
                 { text: "Sweden", correct: true },
+                { text: "Finland", correct: false },
                 { text: "Norway", correct: false },
             ]
         },
         {
             question: "Who said: Don't let it worry you. It's me, I'm extremely famous?",
             answers: [
+                { text: "Ron", correct: true },
                 { text: "Harry", correct: false },
                 { text: "Sirius", correct: false },
-                { text: "Ron", correct: true },
                 { text: "Dumbledore", correct: false },
             ]
         },
@@ -238,8 +239,8 @@ const questions =
             question: "Who curses George, causing him to lose his ear?",
             answers: [
                 { text: "Lucius", correct: false },
+                { text: "Ron", correct: true },
                 { text: "Voldemort", correct: false },
-                { text: "Snape", correct: true },
                 { text: "Greyback", correct: false },
             ]
         },
@@ -247,9 +248,9 @@ const questions =
             question: "Whats the name of the drill company uncle vernon works for?",
             answers: [
                 { text: "Grady's", correct: false },
-                { text: "Grunning's", correct: true },
                 { text: "Gillingham's", correct: false },
                 { text: "Garsington's", correct: false },
+                { text: "Grunning's", correct: true },
             ]
         },
         {
@@ -264,9 +265,9 @@ const questions =
         {
             question: "What does Arthur Weasley collect?",
             answers: [
+                { text: "Matches", correct: true },
                 { text: "A rubber ducks", correct: false },
                 { text: "Plugs", correct: false },
-                { text: "Matches", correct: true },
                 { text: "Stamps", correct: false },
             ]
         },
@@ -275,16 +276,16 @@ const questions =
             answers: [
                 { text: "Snape", correct: false },
                 { text: "Umbridge", correct: false },
-                { text: "McGonagall", correct: true },
                 { text: "Lockheart", correct: false },
+                { text: "McGonagall", correct: true },
             ]
         },
         {
             question: "Who gave Rita Skeeter the controversial information to write Dumbledore's biography?",
             answers: [
+                { text: "Bathilda Bagshot", correct: true },
                 { text: "Elphias Dodge", correct: false },
                 { text: "Aberforth Dumbledore", correct: false },
-                { text: "Bathilda Bagshot", correct: true },
                 { text: "Dumbledore himself", correct: false },
             ]
         },
@@ -302,8 +303,8 @@ const questions =
             answers: [
                 { text: "Marge", correct: false },
                 { text: "Mrs Figg", correct: false },
-                { text: "Yvonne", correct: true },
                 { text: "Petunia", correct: false },
+                { text: "Yvonne", correct: true },
             ]
         },
         {
@@ -320,16 +321,16 @@ const questions =
             answers: [
                 { text: "pure blood", correct: false },
                 { text: "Fairlights", correct: false },
-                { text: "Pinefresh", correct: true },
                 { text: "fortuna major", correct: false },
+                { text: "Pinefresh", correct: true },
             ]
         },
         {
             question: "which of the following is not a death eater?",
             answers: [
+                { text: "Narcissa Malfoy", correct: true },
                 { text: "Regulus Black", correct: false },
                 { text: "Francis Crabbe", correct: false },
-                { text: "Narcissa Malfoy", correct: true },
                 { text: "Corban Yaxley", correct: false },
             ]
         },
@@ -345,9 +346,9 @@ const questions =
         {
             question: "which of the following was a Christmas present sent to Harry by the Dursleys?",
             answers: [
+                { text: "a single tissue", correct: true },
                 { text: "a used battery", correct: false },
                 { text: "An old dictionary ", correct: false },
-                { text: "a single tissue", correct: true },
                 { text: "A 5p coin", correct: false },
             ]
         },
@@ -356,8 +357,8 @@ const questions =
             answers: [
                 { text: "Milicent Bulstrode", correct: false },
                 { text: "Padma Patel", correct: false },
-                { text: "Pansy Parkinson", correct: true },
                 { text: "Daphne Greengrass", correct: false },
+                { text: "Pansy Parkinson", correct: true },
             ]
         },
     ];

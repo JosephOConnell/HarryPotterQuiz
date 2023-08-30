@@ -84,3 +84,59 @@ a {
     width: 70%;
     text-align: center;
 }
+
+/* Start Button */
+#start-btn {
+    text-align: center;
+    width: 120px;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    transition: 1s;
+    margin: auto;
+}
+
+#start-btn:active,
+#start-btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid white;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+#start-btn:focus {
+    outline: none;
+}
+
+/* Next Button */
+#next-btn {
+    display: none;
+    text-align: center;
+    width: 120px;
+    letter-spacing: 1.2px;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, .1);
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    transition: 1s;
+    margin: auto;
+}
+
+#next-btn:active,
+#next-btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid white;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+#next-btn:focus {
+    outline: none;
+}
