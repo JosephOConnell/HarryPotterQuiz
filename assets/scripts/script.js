@@ -3,15 +3,17 @@ const nextButton = document.getElementById("next-btn");
 const userNameArea = document.getElementById("user-name-area");
 const userName = document.getElementById("user-name");
 const questionElement = document.getElementById("question");
+const questionArea = document.getElementById("question-area");
 const answerArea = document.getElementById("answer-area");
 const answerButtonsElement = document.getElementById("answer-buttons");
-const scoreElement = parseInt(document.getElementById("score").innerText);
+let scoreElement = parseInt(document.getElementById("score").innerText);
 const finalScore = document.getElementById("final-score");
 
 let shuffledQuestions, currentQuestionIndex;
 
 // Start of the quiz.
 startButton.addEventListener("click", startGame);
+
 function startGame() {
     userNameArea.style.display = "none";
     startButton.style.display = "none";
@@ -72,6 +74,7 @@ function selectAnswer(e) {
     });
     nextButton.disabled = false;
 }
+
 nextButton.addEventListener("click", () => {
     if (currentQuestionIndex < questions.length) {
         handleNextButton();
