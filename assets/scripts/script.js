@@ -68,6 +68,20 @@ function selectAnswer(e) {
     });
     nextButton.disabled = false;
 }
+nextButton.addEventListener("click", () => {
+    if (currentQuestionIndex < questions.length) {
+        handleNextButton();
+    }
+});
+
+function handleNextButton() {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < 10) {
+        setNextQuestion();
+    } else {
+        showScore();
+    }
+}
 
 function showScore() {
     resetState();
