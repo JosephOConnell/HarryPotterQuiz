@@ -92,7 +92,7 @@ a {
     font-size: 1.5rem;
 }
 
-/* Final score area */
+/* Final score */
 #final-score {
     width: 70%;
     height: 400px;
@@ -204,4 +204,27 @@ a {
 
 #next-btn:focus {
     outline: none;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 800px) {
+    body {
+        background-image: url(../images/hogwarts.jpg);
+        background-position: center center;
+    }
+
+    .question-area {
+        font-size: 1.4rem;
+
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .btn:hover {
+        font-size: 1.3rem;
+    }
 }
