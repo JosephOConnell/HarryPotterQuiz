@@ -8,10 +8,7 @@ const answerButtonsElement = document.getElementById("answer-buttons");
 const scoreElement = parseInt(document.getElementById("score").innerText);
 const finalScore = document.getElementById("final-score");
 
-// randomizes the questions.
-shuffledQuestions = questions.sort(() => Math.random() - .5);
-currentQuestionIndex = 0;
-scoreElement = 0;
+let shuffledQuestions, currentQuestionIndex;
 
 // Start of the quiz.
 startButton.addEventListener("click", startGame);
@@ -22,6 +19,11 @@ function startGame() {
     answerArea.style.display = "flex";
     finalScore.style.display = "none";
 
+    // randomizes the questions.
+    shuffledQuestions = questions.sort(() => Math.random() - .5);
+    currentQuestionIndex = 0;
+    scoreElement = 0;
+
     setNextQuestion();
 }
 
@@ -30,6 +32,7 @@ function setNextQuestion() {
 }
 
 function showQuestion(question) {
+    resetState();
     nextButton.disabled = true;
     questionElement.innerText = question.question;
     question.answers.forEach(answer => {
@@ -45,6 +48,7 @@ function showQuestion(question) {
 }
 
 function resetState() {
+    nextButton.classList.add("hide");
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild);
     }
