@@ -1,3 +1,26 @@
+const startButton = document.getElementById("start-btn");
+const nextButton = document.getElementById("next-btn");
+const userNameArea = document.getElementById("user-name-area");
+const userName = document.getElementById("user-name");
+const answerArea = document.getElementById("answer-area");
+const answerButtonsElement = document.getElementById("answer-buttons");
+
+startButton.addEventListener("click", startGame);
+
+function startGame() {
+    userNameArea.style.display = "none";
+    startButton.style.display = "none";
+    nextButton.style.display = "block";
+    answerArea.style.display = "flex";
+
+
+    setNextQuestion();
+}
+
+function setNextQuestion() {
+}
+
+
 // Questions and Answers.
 const questions =
     [
