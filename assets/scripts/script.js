@@ -50,11 +50,34 @@ function resetState() {
     }
 }
 
-function selectAnswer() {
+function selectAnswer(e) {
+    const selectedBtn = e.target;
+    const isCorrect = selectedBtn.dataset.correct === "true";
+    if (isCorrect) {
+        document.getElementById("score").innerText = ++scoreElement;
+        selectedBtn.style.background = "green";
 
+    } else {
+        selectedBtn.style.background = "red";
+    }
+
+    Array.from(answerButtonsElement.children).forEach(button => {
+        if (button.dataset.correct === "true") {
+        }
+        button.disabled = true;
+    });
+    nextButton.disabled = false;
 }
 
 function showScore() {
+    resetState();
+    questionElement.innerText = "";
+    startButton.innerText = "Play Again";
+    startButton.style.display = "block";
+    nextButton.style.display = "none";
+    finalScore.style.display = "flex";
+    finalScore.innerText = `${userName.value}\n You got ${score.innerText} out of 10`;
+    document.getElementById("score").innerText = 0;
 }
 
 // Questions and Answers.
