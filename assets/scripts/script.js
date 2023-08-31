@@ -2,8 +2,12 @@ const startButton = document.getElementById("start-btn");
 const nextButton = document.getElementById("next-btn");
 const userNameArea = document.getElementById("user-name-area");
 const userName = document.getElementById("user-name");
+const questionElement = document.getElementById("question");
 const answerArea = document.getElementById("answer-area");
 const answerButtonsElement = document.getElementById("answer-buttons");
+const scoreElement = parseInt(document.getElementById("score").innerText);
+const finalScore = document.getElementById("final-score");
+
 
 startButton.addEventListener("click", startGame);
 
@@ -12,7 +16,7 @@ function startGame() {
     startButton.style.display = "none";
     nextButton.style.display = "block";
     answerArea.style.display = "flex";
-
+    finalScore.style.display = "none";
 
     setNextQuestion();
 }
@@ -20,6 +24,14 @@ function startGame() {
 function setNextQuestion() {
 }
 
+function setNextQuestion() {
+}
+
+function showQuestion() {
+}
+
+function showScore() {
+}
 
 // Questions and Answers.
 const questions =
