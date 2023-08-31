@@ -8,9 +8,13 @@ const answerButtonsElement = document.getElementById("answer-buttons");
 const scoreElement = parseInt(document.getElementById("score").innerText);
 const finalScore = document.getElementById("final-score");
 
+// randomizes the questions.
+shuffledQuestions = questions.sort(() => Math.random() - .5);
+currentQuestionIndex = 0;
+scoreElement = 0;
 
+// Start of the quiz.
 startButton.addEventListener("click", startGame);
-
 function startGame() {
     userNameArea.style.display = "none";
     startButton.style.display = "none";
@@ -22,12 +26,32 @@ function startGame() {
 }
 
 function setNextQuestion() {
+    showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
-function setNextQuestion() {
+function showQuestion(question) {
+    nextButton.disabled = true;
+    questionElement.innerText = question.question;
+    question.answers.forEach(answer => {
+        const button = document.createElement("button");
+        button.innerText = answer.text;
+        button.classList.add("btn");
+        answerButtonsElement.appendChild(button);
+        if (answer.correct) {
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener("click", selectAnswer);
+    });
 }
 
-function showQuestion() {
+function resetState() {
+    while (answerButtonsElement.firstChild) {
+        answerButtonsElement.removeChild(answerButtonsElement.firstChild);
+    }
+}
+
+function selectAnswer() {
+
 }
 
 function showScore() {
