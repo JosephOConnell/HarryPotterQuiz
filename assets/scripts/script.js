@@ -107,19 +107,19 @@ const questions =
         {
             question: "What was the name of Hepzibah Smith's house elf?",
             answers: [
-                { text: "winky", correct: false },
-                { text: "dobby", correct: false },
-                { text: "kreacher", correct: false },
-                { text: "hokey", correct: true },
+                { text: "Winky", correct: false },
+                { text: "Dobby", correct: false },
+                { text: "Kreacher", correct: false },
+                { text: "Hokey", correct: true },
             ]
         },
         {
             question: "Triwizard Champion Cedric Diggory was from which Hogwarts house?",
             answers: [
-                { text: "hufflepuff", correct: true },
-                { text: "ravenclaw", correct: false },
-                { text: "slytherin", correct: false },
-                { text: "griffindor", correct: false },
+                { text: "Hufflepuff", correct: true },
+                { text: "Ravenclaw", correct: false },
+                { text: "Slytherin", correct: false },
+                { text: "Griffindor", correct: false },
             ]
         },
         {
@@ -170,37 +170,37 @@ const questions =
         {
             question: "What colour are Ginny and Gabrielle's bridesmaids dresses?",
             answers: [
-                { text: "gold", correct: true },
+                { text: "Gold", correct: true },
                 { text: "Pink", correct: false },
-                { text: "lavendar", correct: false },
-                { text: "blue", correct: false },
+                { text: "Lavendar", correct: false },
+                { text: "Blue", correct: false },
             ]
         },
         {
             question: "What does Dudley throw out the window in a tantrum?",
             answers: [
-                { text: "playstation", correct: true },
-                { text: "gameboy", correct: false },
-                { text: "tv", correct: false },
-                { text: "walkman", correct: false },
+                { text: "Playstation", correct: true },
+                { text: "Gameboy", correct: false },
+                { text: "TV", correct: false },
+                { text: "Walkman", correct: false },
             ]
         },
         {
             question: "What fruit do you tickle on the painting to get into the kitchen?",
             answers: [
-                { text: "peach", correct: false },
-                { text: "pear", correct: true },
-                { text: "banana", correct: false },
-                { text: "orange", correct: false },
+                { text: "Peach", correct: false },
+                { text: "Pear", correct: true },
+                { text: "Banana", correct: false },
+                { text: "Orange", correct: false },
             ]
         },
         {
             question: "what is Professor Binns's first name?",
             answers: [
-                { text: "harold", correct: false },
-                { text: "gideon", correct: false },
-                { text: "cuthbert", correct: true },
-                { text: "elphias", correct: false },
+                { text: "Harold", correct: false },
+                { text: "Gideon", correct: false },
+                { text: "Cuthbert", correct: true },
+                { text: "Elphias", correct: false },
             ]
         },
         {
@@ -251,18 +251,18 @@ const questions =
         {
             question: "what colour are Harry's dress robes which he wears to the yule ball?",
             answers: [
-                { text: "green", correct: true },
-                { text: "black", correct: false },
-                { text: "navy", correct: false },
-                { text: "grey", correct: false },
+                { text: "Green", correct: true },
+                { text: "Black", correct: false },
+                { text: "Navy", correct: false },
+                { text: "Grey", correct: false },
             ]
         },
         {
             question: "How is the Diadem destroyed?",
             answers: [
-                { text: "basalisk venom", correct: false },
-                { text: "the sword of griffindor", correct: false },
-                { text: "fiendfire", correct: true },
+                { text: "Basalisk venom", correct: false },
+                { text: "The sword of griffindor", correct: false },
+                { text: "Fiendfire", correct: true },
                 { text: "It's owner is killed", correct: false },
             ]
         },
@@ -298,17 +298,17 @@ const questions =
             answers: [
                 { text: "Garrick Ollivandar", correct: false },
                 { text: "Tom the barman", correct: false },
-                { text: "madam malkin", correct: false },
-                { text: "florean Fortescue", correct: true },
+                { text: "Madam Malkin", correct: false },
+                { text: "Florean Fortescue", correct: true },
             ]
         },
         {
             question: "which of the following was NOT a horcrux?",
             answers: [
-                { text: "riddle's diary", correct: false },
-                { text: "hufflepuff's cup", correct: false },
-                { text: "griffindor's sword", correct: true },
-                { text: "slytherin's locket", correct: false },
+                { text: "Riddle's diary", correct: false },
+                { text: "Hufflepuff's cup", correct: false },
+                { text: "Griffindor's sword", correct: true },
+                { text: "Slytherin's locket", correct: false },
             ]
         },
         {
@@ -342,7 +342,7 @@ const questions =
             question: "Who curses George, causing him to lose his ear?",
             answers: [
                 { text: "Lucius", correct: false },
-                { text: "Ron", correct: true },
+                { text: "Snape", correct: true },
                 { text: "Voldemort", correct: false },
                 { text: "Greyback", correct: false },
             ]
@@ -396,9 +396,9 @@ const questions =
             question: "which of these did Snape NOT mention in Harry's first potions lesson?",
             answers: [
                 { text: "Bezor", correct: false },
-                { text: "wormwood", correct: false },
-                { text: "wolfsbane", correct: true },
-                { text: "asphodel", correct: false },
+                { text: "Wormwood", correct: false },
+                { text: "Wolfsbane", correct: true },
+                { text: "Asphodel", correct: false },
             ]
         },
         {
@@ -422,9 +422,9 @@ const questions =
         {
             question: "which of the following was NOT a common room password?",
             answers: [
-                { text: "pure blood", correct: false },
+                { text: "Pure blood", correct: false },
                 { text: "Fairlights", correct: false },
-                { text: "fortuna major", correct: false },
+                { text: "Fortuna major", correct: false },
                 { text: "Pinefresh", correct: true },
             ]
         },
@@ -449,8 +449,8 @@ const questions =
         {
             question: "which of the following was a Christmas present sent to Harry by the Dursleys?",
             answers: [
-                { text: "a single tissue", correct: true },
-                { text: "a used battery", correct: false },
+                { text: "A single tissue", correct: true },
+                { text: "A used battery", correct: false },
                 { text: "An old dictionary ", correct: false },
                 { text: "A 5p coin", correct: false },
             ]
