@@ -15,6 +15,7 @@ let shuffledQuestions, currentQuestionIndex;
 startButton.addEventListener("click", startGame);
 
 function startGame() {
+    questionArea.style.display = "block";
     userNameArea.style.display = "none";
     startButton.style.display = "none";
     nextButton.style.display = "block";
@@ -62,7 +63,6 @@ function selectAnswer(e) {
     if (isCorrect) {
         document.getElementById("score").innerText = ++scoreElement;
         selectedBtn.style.background = "green";
-
     } else {
         selectedBtn.style.background = "red";
     }
@@ -195,7 +195,7 @@ const questions =
             ]
         },
         {
-            question: "what is Professor Binns's first name?",
+            question: "What is Professor Binns's first name?",
             answers: [
                 { text: "Harold", correct: false },
                 { text: "Gideon", correct: false },
@@ -204,7 +204,7 @@ const questions =
             ]
         },
         {
-            question: "which of these is NOT an ingredient in Polyjuice Potion?",
+            question: "Which of these is NOT an ingredient in Polyjuice Potion?",
             answers: [
                 { text: "Dandelion root", correct: true },
                 { text: "Boomslang skin", correct: false },
@@ -213,7 +213,7 @@ const questions =
             ]
         },
         {
-            question: "what did Mrs Weasley gift Percy when he became prefect?",
+            question: "What did Mrs Weasley gift Percy when he became prefect?",
             answers: [
                 { text: "New Robes", correct: false },
                 { text: "A New Wizards Chess Set", correct: false },
@@ -240,7 +240,7 @@ const questions =
             ]
         },
         {
-            question: "what is Neville's grandmother's name?",
+            question: "What is Neville's grandmother's name?",
             answers: [
                 { text: "Pomona", correct: false },
                 { text: "Alice", correct: false },
@@ -249,7 +249,7 @@ const questions =
             ]
         },
         {
-            question: "what colour are Harry's dress robes which he wears to the yule ball?",
+            question: "What colour are Harry's dress robes which he wears to the yule ball?",
             answers: [
                 { text: "Green", correct: true },
                 { text: "Black", correct: false },
@@ -267,7 +267,7 @@ const questions =
             ]
         },
         {
-            question: " what is Dracos wand made of?",
+            question: " What is Dracos wand made of?",
             answers: [
                 { text: "Yew", correct: false },
                 { text: "Holly", correct: false },
@@ -276,7 +276,7 @@ const questions =
             ],
         },
         {
-            question: "whats Ron's middle name?",
+            question: "Whats Ron's middle name?",
             answers: [
                 { text: "Barnabus", correct: false },
                 { text: "Arthur", correct: false },
@@ -285,7 +285,7 @@ const questions =
             ]
         },
         {
-            question: "whats the entrace code for the ministry of magic?",
+            question: "Whats the entrace code for the ministry of magic?",
             answers: [
                 { text: "69339", correct: false },
                 { text: "62442", correct: true },
@@ -303,7 +303,7 @@ const questions =
             ]
         },
         {
-            question: "which of the following was NOT a horcrux?",
+            question: "Which of the following was NOT a horcrux?",
             answers: [
                 { text: "Riddle's diary", correct: false },
                 { text: "Hufflepuff's cup", correct: false },
@@ -312,7 +312,7 @@ const questions =
             ]
         },
         {
-            question: "who is the aunt of Susan Bones?",
+            question: "Who is the aunt of Susan Bones?",
             answers: [
                 { text: "Emiline", correct: false },
                 { text: "Bathilda", correct: false },
@@ -357,7 +357,7 @@ const questions =
             ]
         },
         {
-            question: "who visits the Dursleys in the second book?",
+            question: "Who visits the Dursleys in the second book?",
             answers: [
                 { text: "Dumbledore", correct: false },
                 { text: "Pierce Polkiss", correct: false },
@@ -375,7 +375,7 @@ const questions =
             ]
         },
         {
-            question: "who said 'If you die, you need not hand it in'?",
+            question: "Who said 'If you die, you need not hand it in'?",
             answers: [
                 { text: "Snape", correct: false },
                 { text: "Umbridge", correct: false },
@@ -393,7 +393,7 @@ const questions =
             ]
         },
         {
-            question: "which of these did Snape NOT mention in Harry's first potions lesson?",
+            question: "Which of these did Snape NOT mention in Harry's first potions lesson?",
             answers: [
                 { text: "Bezor", correct: false },
                 { text: "Wormwood", correct: false },
@@ -420,7 +420,7 @@ const questions =
             ]
         },
         {
-            question: "which of the following was NOT a common room password?",
+            question: "Which of the following was NOT a common room password?",
             answers: [
                 { text: "Pure blood", correct: false },
                 { text: "Fairlights", correct: false },
@@ -429,7 +429,7 @@ const questions =
             ]
         },
         {
-            question: "which of the following is not a death eater?",
+            question: "Which of the following is not a death eater?",
             answers: [
                 { text: "Narcissa Malfoy", correct: true },
                 { text: "Regulus Black", correct: false },
@@ -447,7 +447,7 @@ const questions =
             ]
         },
         {
-            question: "which of the following was a Christmas present sent to Harry by the Dursleys?",
+            question: "Which of the following was a Christmas present sent to Harry by the Dursleys?",
             answers: [
                 { text: "A single tissue", correct: true },
                 { text: "A used battery", correct: false },
