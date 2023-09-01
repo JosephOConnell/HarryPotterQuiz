@@ -89,11 +89,12 @@ a {
 }
 
 /* Score CSS */
-.score {
+#score-area {
     width: 70%;
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 10px;
+    display: none;
 }
 
 /* Final score */

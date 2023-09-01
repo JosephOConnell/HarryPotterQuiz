@@ -6,6 +6,7 @@ const questionElement = document.getElementById("question");
 const questionArea = document.getElementById("question-area");
 const answerArea = document.getElementById("answer-area");
 const answerButtonsElement = document.getElementById("answer-buttons");
+const scoreArea = document.getElementById("score-area");
 let scoreElement = parseInt(document.getElementById("score").innerText);
 const finalScore = document.getElementById("final-score");
 
@@ -20,6 +21,7 @@ function startGame() {
     startButton.style.display = "none";
     nextButton.style.display = "block";
     answerArea.style.display = "flex";
+    scoreArea.style.display = "block";
     finalScore.style.display = "none";
 
     // randomizes the questions.
@@ -96,8 +98,15 @@ function showScore() {
     startButton.innerText = "Play Again";
     startButton.style.display = "block";
     nextButton.style.display = "none";
+    scoreArea.style.display = "none";
     finalScore.style.display = "flex";
-    finalScore.innerText = `${userName.value}\n You got ${score.innerText} out of 10`;
+    if (scoreElement > 7) {
+        finalScore.innerText = `Well Done ${userName.value}\n You got ${score.innerText} out of 10`;
+    } else if (scoreElement > 4) {
+        finalScore.innerText = `Unlucky ${userName.value}\n You got ${score.innerText} out of 10`;
+    } else {
+        finalScore.innerText = `Hey ${userName.value}\nDid you even read the books?\n You got ${score.innerText} out of 10`;
+    }
     document.getElementById("score").innerText = 0;
 }
 
