@@ -25,7 +25,7 @@ function startGame() {
     finalScore.style.display = "none";
 
     // randomizes the questions.
-    shuffledQuestions = questions.sort(() => Math.random() - .5);
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
     scoreElement = 0;
 
@@ -70,8 +70,6 @@ function selectAnswer(e) {
     }
 
     Array.from(answerButtonsElement.children).forEach(button => {
-        if (button.dataset.correct === "true") {
-        }
         button.disabled = true;
     });
     nextButton.disabled = false;
@@ -101,11 +99,11 @@ function showScore() {
     scoreArea.style.display = "none";
     finalScore.style.display = "flex";
     if (scoreElement > 7) {
-        finalScore.innerText = `Well Done ${userName.value}\n You got ${score.innerText} out of 10`;
+        finalScore.innerText = `Well Done ${userName.value}\n You got ${scoreElement} out of 10`;
     } else if (scoreElement > 4) {
-        finalScore.innerText = `Unlucky ${userName.value}\n You got ${score.innerText} out of 10`;
+        finalScore.innerText = `Unlucky ${userName.value}\n You got ${scoreElement} out of 10`;
     } else {
-        finalScore.innerText = `Hey ${userName.value}\nDid you even read the books?\n You got ${score.innerText} out of 10`;
+        finalScore.innerText = `Hey ${userName.value}\nDid you even read the books?\n You got ${scoreElement} out of 10`;
     }
     document.getElementById("score").innerText = 0;
 }
@@ -370,16 +368,16 @@ const questions =
             answers: [
                 { text: "Dumbledore", correct: false },
                 { text: "Pierce Polkiss", correct: false },
-                { text: "the Masons", correct: true },
+                { text: "The Masons", correct: true },
                 { text: "Aunt Marge", correct: false },
             ]
         },
         {
             question: "What does Arthur Weasley collect?",
             answers: [
-                { text: "Matches", correct: true },
+                { text: "Matches", correct: false },
                 { text: "A rubber ducks", correct: false },
-                { text: "Plugs", correct: false },
+                { text: "Plugs", correct: true },
                 { text: "Stamps", correct: false },
             ]
         },
@@ -450,8 +448,8 @@ const questions =
             question: "Who was NOT in the orphanage where Tom Riddle grew up?",
             answers: [
                 { text: "Amy Benson", correct: false },
-                { text: "Dennis Bishop", correct: false },
                 { text: "Timmy Cole", correct: true },
+                { text: "Dennis Bishop", correct: false },
                 { text: "Billy Stubbs", correct: false },
             ]
         },

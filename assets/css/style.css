@@ -226,7 +226,7 @@ a {
         width: 100%;
     }
 
-    .question-area {
+    #question-area {
         width: 100%;
         font-size: 1rem;
     }
@@ -259,7 +259,7 @@ a {
         width: 100%;
     }
 
-    .score {
+    #score-area {
         width: 100%;
         text-align: center;
         font-size: 1.5rem;
