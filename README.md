@@ -1,39 +1,83 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Harry Potter Quiz
 
-Welcome,
+![Am I Responsive]()
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Index Lighthouse Results]()
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **July 26th, 2023**
+### Features
 
-## Codeanywhere Reminders
+- **USERNAME**
+![]()
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+- **Questions**
+![]()
 
-`python3 -m http.server`
+- **Answers**
+![]()
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+- **Start Button**
+![]()
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+- **Next Button**
+![]()
 
-`http_server`
+- **Score**
+![]()
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- **Final Score**
+![]()
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+- **Play Again**
+![]()
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Testing
 
-To log into the Heroku toolbelt CLI:
+| **TEST**                            | **ACTION**                                       | **EXPECTATION**                                              | **RESULT**        |
+| ----------------------------------- | ------------------------------------------------ | ------------------------------------------------------------ | ----------------- |
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- Tested the responsiveness of my site on [Am I Responsive?]()
+  ![Index Am I Responsive]()
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Validator Testing
 
----
+- index HTML
+  0 errors returned when passing through the official [W3C validator]()
+  ![HTML Vidator]()
 
-Happy coding!
+- style CSS
+  0 errors was found when passing through the official [Jigsaw CSS validator]()
+  ![CSS Validator]()
+
+- script Javascript
+  0 errors was found when passing through the official [JSHint]()
+  ![Javascript Validator]()
+
+### Unfixed Bugs
+
+### Deployment
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows:
+  - Create a GitHub repository, Then clone the Code Institute Template into it.
+  - In the Code Institute page select "Go to IDE" (CodeAnywhere) and creat a new workspace.
+  - Then copy the repository into the workspace.
+  - Now go to to the repository page and navigate to the Settings tab.
+  - From the source section drop-down menu, I selected the Master Branch.
+  - Once the master branch was selected, the page automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The live link can be found here - [Harry Potter Quiz](https://josephoconnell.github.io/HarryPotterQuiz/)
+
+### Content and Media Credits
+
+- **Quiz**
+- For the QUIZ I watched numerous videos on youtube: [GreatStack](https://www.youtube.com/watch?v=PBcqGxrr9g8), [WebDevSimplified](https://www.youtube.com/watch?v=riDzcEQbX6k&t=1298s), [James Q Quick](https://www.youtube.com/watch?v=zZdQGs62cR8&t=277s), [Kindson The Tech Pro](https://www.youtube.com/watch?v=2Bpiluefkh8&t=74s), [Brian Design](https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2000s) and [Awais Mirza](https://www.youtube.com/watch?v=jvk1pFNqXaw&t=1053s).
+- I also used the Code Institute Slack channel, [Stack Overflow](https://stackoverflow.co/), [GeeksforGeeks](https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/), [W3Schools](https://www.w3schools.com)
+
+- **Questions**
+- 
+
+- **Images, Fonts and Icon**
+- I got the HP Crest image from [Harry Potter Crest Image](https://wallpaperaccess.com/harry-potter-gryffindor-crest)
+- I got the HP Castle image from [Harry Potter Castle Image](https://www.peakpx.com/en/hd-wallpaper-desktop-abbxn)
+- The Favicon was taken from [Iconfinder](https://www.iconfinder.com/search?q=harry%20potter)
+- The icons were taken from [Font Awesome](https://fontawesome.com/)
+- The fonts were taken from [Google Fonts](https://fonts.google.com/)

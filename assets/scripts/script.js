@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 const startButton = document.getElementById("start-btn");
 const nextButton = document.getElementById("next-btn");
 const userNameArea = document.getElementById("user-name-area");
@@ -97,6 +99,7 @@ function showScore() {
     startButton.style.display = "block";
     nextButton.style.display = "none";
     scoreArea.style.display = "none";
+    questionArea.style.display = "none";
     finalScore.style.display = "flex";
     if (scoreElement > 7) {
         finalScore.innerText = `Well Done ${userName.value}\n You got ${scoreElement} out of 10`;
@@ -376,7 +379,7 @@ const questions =
             question: "What does Arthur Weasley collect?",
             answers: [
                 { text: "Matches", correct: false },
-                { text: "A rubber ducks", correct: false },
+                { text: "A rubber duck", correct: false },
                 { text: "Plugs", correct: true },
                 { text: "Stamps", correct: false },
             ]
