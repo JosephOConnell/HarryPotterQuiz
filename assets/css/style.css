@@ -109,13 +109,13 @@ a {
 }
 
 /* Contacts CSS */
-.contacts-area {
+#contacts-area {
     width: 70%;
     text-align: center;
-    bottom: 0;
+    display: none;
 }
 
-.contacts-area li {
+#contacts-area li {
     list-style: none;
     display: inline;
     font-size: 2rem;
@@ -249,13 +249,13 @@ a {
         font-size: 2rem;
     }
 
-    .contacts-area {
+    #contacts-area {
         width: 100%;
         text-align: center;
         margin: 5px;
     }
 
-    .start-next-area {
+    #start-next-area {
         width: 100%;
     }
 

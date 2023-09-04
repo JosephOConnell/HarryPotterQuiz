@@ -9,6 +9,7 @@ const questionArea = document.getElementById("question-area");
 const answerArea = document.getElementById("answer-area");
 const answerButtonsElement = document.getElementById("answer-buttons");
 const scoreArea = document.getElementById("score-area");
+const contactArea = document.getElementById("contacts-area");
 let scoreElement = parseInt(document.getElementById("score").innerText);
 const finalScore = document.getElementById("final-score");
 
@@ -25,6 +26,7 @@ function startGame() {
     answerArea.style.display = "flex";
     scoreArea.style.display = "block";
     finalScore.style.display = "none";
+    contactArea.style.display = "block";
 
     // randomizes the questions.
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
