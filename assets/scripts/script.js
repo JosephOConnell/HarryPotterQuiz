@@ -97,16 +97,16 @@ function handleNextButton() {
 function showScore() {
     resetState();
     questionElement.innerText = "";
-    startButton.innerText = "Play Again";
+    startButton.innerText = "Replay";
     startButton.style.display = "block";
     nextButton.style.display = "none";
     scoreArea.style.display = "none";
     questionArea.style.display = "none";
     finalScore.style.display = "flex";
-    if (scoreElement > 7) {
+    if (scoreElement > 6) {
         finalScore.innerText = `Well Done ${userName.value}\n You got ${scoreElement} out of 10`;
     } else if (scoreElement > 4) {
-        finalScore.innerText = `Unlucky ${userName.value}\n You got ${scoreElement} out of 10`;
+        finalScore.innerText = `Not bad ${userName.value}\n You got ${scoreElement} out of 10`;
     } else {
         finalScore.innerText = `Hey ${userName.value}\nDid you even read the books?\n You got ${scoreElement} out of 10`;
     }
