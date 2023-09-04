@@ -2,7 +2,7 @@
 
 ![Am I Responsive](https://github.com/JosephOConnell/HarryPotterQuiz/blob/main/assets/images/README%20Images/hp-am-i-responsive.png)
 
-Think you know all there is to know about Harry Potter?
+Think you know all there is to know about Harry Potter? <br/>
 Take this Harry Potter fan quiz to test you your knowledge.
 
 ![PageSpeed Insights Lighthouse Results](https://github.com/JosephOConnell/HarryPotterQuiz/blob/main/assets/images/README%20Images/hp-lighthouse-pagespeeds.png)
@@ -11,26 +11,24 @@ Take this Harry Potter fan quiz to test you your knowledge.
 
 ### Features
 
-- **USERNAME**
-![]()
-
+- **Username**
+- 
 - **Questions**
-![]()
 
 - **Answers**
-![]()
 
 - **Start Button**
-![]()
 
 - **Next Button**
-![]()
 
 - **Score**
-![]()
 
 - **Final Score**
-![]()
+
+![Username & Start Button](https://github.com/JosephOConnell/HarryPotterQuiz/blob/main/assets/images/README%20Images/hp-user-name.png)
+![Correct Answer, Score & Next Button](https://github.com/JosephOConnell/HarryPotterQuiz/blob/main/assets/images/README%20Images/hp-correct-answer.png)
+![Wrong Answer](https://github.com/JosephOConnell/HarryPotterQuiz/blob/main/assets/images/README%20Images/hp-wrong-answer.png)
+![Final Score & Replay](https://github.com/JosephOConnell/HarryPotterQuiz/blob/main/assets/images/README%20Images/hp-score-replay.png)
 
 ### Testing
 
