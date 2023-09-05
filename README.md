@@ -12,7 +12,7 @@ Take this Harry Potter fan quiz to test you your knowledge.
 ### Features
 
 - **Username**
-- 
+  
 - **Questions**
 
 - **Answers**

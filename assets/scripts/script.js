@@ -6,6 +6,7 @@ const userNameArea = document.getElementById("user-name-area");
 const userName = document.getElementById("user-name");
 const questionElement = document.getElementById("question");
 const questionArea = document.getElementById("question-area");
+const questionNumber = document.getElementById("question-number");
 const answerArea = document.getElementById("answer-area");
 const answerButtonsElement = document.getElementById("answer-buttons");
 const scoreArea = document.getElementById("score-area");
@@ -31,6 +32,7 @@ function startGame() {
     // randomizes the questions.
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
+    questionNumber = 0;
     scoreElement = 0;
 
     setNextQuestion();
@@ -42,6 +44,8 @@ function setNextQuestion() {
 
 function showQuestion(question) {
     resetState();
+    document.getElementById("question-number").innerText = `${++questionNumber}/10`;
+
     nextButton.disabled = true;
     questionElement.innerText = question.question;
     question.answers.forEach(answer => {
@@ -104,11 +108,11 @@ function showScore() {
     questionArea.style.display = "none";
     finalScore.style.display = "flex";
     if (scoreElement > 6) {
-        finalScore.innerText = `Well Done ${userName.value}\n You got ${scoreElement} out of 10`;
+        finalScore.innerText = `Well Done ${userName.value}\n You got ${scoreElement} correct out of 10`;
     } else if (scoreElement > 4) {
-        finalScore.innerText = `Not bad ${userName.value}\n You got ${scoreElement} out of 10`;
+        finalScore.innerText = `Not bad ${userName.value}\n You got ${scoreElement} correct out of 10`;
     } else {
-        finalScore.innerText = `Hey ${userName.value}\nDid you even read the books?\n You got ${scoreElement} out of 10`;
+        finalScore.innerText = `Hey ${userName.value}\nDid you even read the books?\n You got ${scoreElement} correct out of 10`;
     }
     document.getElementById("score").innerText = 0;
 }
