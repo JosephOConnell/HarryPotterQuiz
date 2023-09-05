@@ -6,7 +6,6 @@ const userNameArea = document.getElementById("user-name-area");
 const userName = document.getElementById("user-name");
 const questionElement = document.getElementById("question");
 const questionArea = document.getElementById("question-area");
-const questionNumber = document.getElementById("question-number");
 const answerArea = document.getElementById("answer-area");
 const answerButtonsElement = document.getElementById("answer-buttons");
 const scoreArea = document.getElementById("score-area");
