@@ -1,12 +1,18 @@
 # Harry Potter Quiz
 
-    Think you know all there is to know about Harry Potter Books? <br/>
-    Take this Harry Potter fan quiz to test you your knowledge.
+Think you know all there is to know about Harry Potter Books?
+
+Take this Harry Potter fan quiz to test you your knowledge.
 
 ![Am I Responsive](https://github.com/JosephOConnell/HarryPotterQuiz/blob/main/assets/images/README%20Images/hp-am-i-responsive.png)
 
-    About This Quiz
-    This quiz was created using JavaScript, HTML, and CSS. The main purpose of this project was to create a user-friendly quiz website dedicated to testing the users knowledge of the Harry Potter Book Series. It is a multiple-choice quiz with 40 questions only a true Potter fans would know. The quiz questions are displayed at random and is done 10 question at a time. I did 10 questions at a time to increase replayability.I also decided to not show the correct answer if the user gets the question wrong. Again this adds the chance a player might replay the quiz and can prevent the user from cheating on some questions. 
+### About This Quiz
+
+This quiz was created using JavaScript, HTML, and CSS.
+The main purpose of this project was to create a user-friendly quiz website dedicated to testing the users knowledge of the Harry Potter Book Series.
+It is a multiple-choice quiz with 40 questions only a true Potter fans would know.
+The quiz questions are displayed at random and is done 10 question at a time. I did 10 questions at a time to increase replayability.
+I also decided to not show the correct answer if the user gets the question wrong. Again this adds the chance a player might replay the quiz and can prevent the user from cheating on some questions.
 
 ![PageSpeed Insights Lighthouse Results](https://github.com/JosephOConnell/HarryPotterQuiz/blob/main/assets/images/README%20Images/hp-lighthouse-pagespeeds.png)
 
@@ -15,32 +21,42 @@
 ### Features
 
 - **Username**
-  - The username function gives the user a choice to enter a name. If the user enters a name it will be used at the end in the final score messages. I made this optional as I know getting the user into the content of the website quick is extremely. A lot of users don't want to put any details into websites like these and usually are doing it for a quick bit of fun.
+  - The username function gives the user a choice to enter a name. If the user enters a name it will be used at the end in the final score messages.
+  - I made this optional as I know getting the user into the content of the website quick is extremely important as lot of users don't want to put any details into websites like these and usually are doing it for a quick bit of fun.
   
   ![Username & Start Button](https://github.com/JosephOConnell/HarryPotterQuiz/blob/main/assets/images/README%20Images/hp-user-name.png)
 
-- **Questions**
-  - I put in 40 questions that are choosen at random. 
-  - These questions were all
-
-- **Answers**
+- **Questions & Answers**
+  - I put in 40 questions that are choosen at random.
+  - The questions were reaserched and created by my wife who is a big fan of the Harry Potter Books.
+  - Multiple choice answers that get bigger if you hover over them.
+  - Answers will turn green if the answer is correct and red if it is wrong.
+  - Answer buttons will be disabled after answer is picked to prevent cheating.
 
 ![Correct Answer, Score & Next Button](https://github.com/JosephOConnell/HarryPotterQuiz/blob/main/assets/images/README%20Images/hp-correct-answer.png)
-- **Start Button**
 
-- **Next Button**
+- **Start, Next & Replay Buttons**
+  - The start button is only used when the user is choosing to pick a name.
+  - The next button is to continue on to the next quextions.
+  - If the user does not pick an answer the next button is disabled until an asner is picked.
+  - After 10 questions the start button is brought back but with new inner text "Relpay".
+  - When clicked the replay button will start the quiz again.
 
 ![Wrong Answer, Score & Next Button](https://github.com/JosephOConnell/HarryPotterQuiz/blob/main/assets/images/README%20Images/hp-wrong-answer.png)
 
-- **Score**
-
-- **Final Score**
+- **Score & Final Score**
+  - When an aswer is correct the score will increment by 1.
+  - If the answer is wrong the score will stay at what ever score the user already had.
+  - When the user gets to the end of the quiz the score will be added up and the final score will show a message.
+  - The final score has 3 different messages depending on hoe many question you got right.
+  - if the user entered a username the message will look more personalised.
 
 ![Final Score & Replay](https://github.com/JosephOConnell/HarryPotterQuiz/blob/main/assets/images/README%20Images/hp-score-replay.png)
 
 ### Testing
 
 | **TEST**                            | **ACTION**                                       | **EXPECTATION**                                              | **RESULT**        |
+| ----------------------------------- | ------------------------------------------------ | ------------------------------------------------------------ | ----------------- |
 | Username & Start Button | Start quiz with or without entering a name | Brings user to the first question | Pass |
 | Next Button | Press on Next Button without picking an answer | Quiz should not procceed | Pass |
 | Next Button | Press on Next Button picking an answer | Quiz should procceed | Pass |
