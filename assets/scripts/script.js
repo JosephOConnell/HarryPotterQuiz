@@ -1,5 +1,6 @@
 /*jshint esversion: 6 */
 
+// Variables called from the ids in index.html and style.css.
 const startButton = document.getElementById("start-btn");
 const nextButton = document.getElementById("next-btn");
 const userNameArea = document.getElementById("user-name-area");
@@ -15,9 +16,15 @@ const finalScore = document.getElementById("final-score");
 
 let shuffledQuestions, currentQuestionIndex;
 
-// Start of the quiz.
+// Calls the start of the quiz when the start button is clicked.
 startButton.addEventListener("click", startGame);
 
+/**
+ * 
+ * The displays are all set for the start of the game.
+ * the questions are then sorted at random.
+ * scores and indexs are set to 0.
+ */
 function startGame() {
     questionArea.style.display = "block";
     userNameArea.style.display = "none";
@@ -28,7 +35,6 @@ function startGame() {
     finalScore.style.display = "none";
     contactArea.style.display = "block";
 
-    // randomizes the questions.
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
     questionNumber = 0;
@@ -37,10 +43,20 @@ function startGame() {
     setNextQuestion();
 }
 
+// Calls the random questions
 function setNextQuestion() {
     showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
+/**
+ * 
+ * @param {string} question question from the array of questions.
+ * First the next button is disabled.
+ * Then the question is put into the inner text of the questionElement id.
+ * New buttons are called with the answers as the inner text.
+ * Checks if the answer is correct.
+ * When answer is clicked select Answer function is called
+ */
 function showQuestion(question) {
     resetState();
     document.getElementById("question-number").innerText = `${++questionNumber}/10`;
@@ -59,13 +75,21 @@ function showQuestion(question) {
     });
 }
 
+// Reset state removes old answer buttons.
 function resetState() {
-    nextButton.classList.add("hide");
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild);
     }
 }
 
+/**
+ * 
+ * @param {Event} e The e.target
+ * The e.target is used to select an answer
+ * Correct = green / Wrong = red.
+ * The score is indented if correct.
+ * Next button is disable if no answer is picked.
+ */
 function selectAnswer(e) {
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
@@ -82,21 +106,28 @@ function selectAnswer(e) {
     nextButton.disabled = false;
 }
 
-nextButton.addEventListener("click", () => {
-    if (currentQuestionIndex < questions.length) {
-        handleNextButton();
-    }
-});
+/**  
+ * 
+ * When clicked it will indent the question index.
+ * Will then check if the quiz is over or if another question is needed.
+ */
 
-function handleNextButton() {
+nextButton.addEventListener("click", () => {
     currentQuestionIndex++;
-    if (currentQuestionIndex < 10) {
+    if (currentQuestionIndex < 10) 
+    {
         setNextQuestion();
     } else {
         showScore();
     }
-}
+});
 
+/**
+ * 
+ * The displays are all set for the end of the game.
+ * Start button is recalled with the inner text of "replay"
+ * There are 3 end messages depending on how many you get right 
+ */
 function showScore() {
     resetState();
     questionElement.innerText = "";
