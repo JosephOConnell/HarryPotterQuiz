@@ -103,10 +103,10 @@ const questions =
         {
             question: "Which of these is NOT an ingredient in Polyjuice Potion?",
             answers: [
-                { text: "Dandelion root", correct: true },
-                { text: "Boomslang skin", correct: false },
+                { text: "Dandelion Root", correct: true },
+                { text: "Boomslang Skin", correct: false },
                 { text: "Leeches", correct: false },
-                { text: "Lacewing fly", correct: false },
+                { text: "Lacewing Fly", correct: false },
             ]
         },
         {
@@ -119,7 +119,7 @@ const questions =
             ]
         },
         {
-            question: "Who came up with the name Dumbledore's Amry?",
+            question: "Who came up with the name Dumbledore's Army?",
             answers: [
                 { text: "Ginny", correct: true },
                 { text: "Cho", correct: false },
@@ -157,10 +157,10 @@ const questions =
         {
             question: "How is the Diadem destroyed?",
             answers: [
-                { text: "Basalisk venom", correct: false },
-                { text: "The sword of griffindor", correct: false },
+                { text: "Basalisk Venom", correct: false },
+                { text: "The Sword of Griffindor", correct: false },
                 { text: "Fiendfire", correct: true },
-                { text: "It's owner is killed", correct: false },
+                { text: "It's Owner is Killed", correct: false },
             ]
         },
         {
@@ -194,7 +194,7 @@ const questions =
             question: "Who helped Harry do his history of magic homework in Diagon Alley?",
             answers: [
                 { text: "Garrick Ollivandar", correct: false },
-                { text: "Tom the barman", correct: false },
+                { text: "Tom the Barman", correct: false },
                 { text: "Madam Malkin", correct: false },
                 { text: "Florean Fortescue", correct: true },
             ]
@@ -202,10 +202,10 @@ const questions =
         {
             question: "Which of the following was NOT a horcrux?",
             answers: [
-                { text: "Riddle's diary", correct: false },
-                { text: "Hufflepuff's cup", correct: false },
-                { text: "Griffindor's sword", correct: true },
-                { text: "Slytherin's locket", correct: false },
+                { text: "Riddle's Diary", correct: false },
+                { text: "Hufflepuff's Cup", correct: false },
+                { text: "Griffindor's Sword", correct: true },
+                { text: "Slytherin's Locket", correct: false },
             ]
         },
         {
@@ -266,7 +266,7 @@ const questions =
             question: "What does Arthur Weasley collect?",
             answers: [
                 { text: "Matches", correct: false },
-                { text: "A rubber duck", correct: false },
+                { text: "A Rubber Duck", correct: false },
                 { text: "Plugs", correct: true },
                 { text: "Stamps", correct: false },
             ]
@@ -286,7 +286,7 @@ const questions =
                 { text: "Bathilda Bagshot", correct: true },
                 { text: "Elphias Dodge", correct: false },
                 { text: "Aberforth Dumbledore", correct: false },
-                { text: "Dumbledore himself", correct: false },
+                { text: "Dumbledore Himself", correct: false },
             ]
         },
         {
@@ -319,9 +319,9 @@ const questions =
         {
             question: "Which of the following was NOT a common room password?",
             answers: [
-                { text: "Pure blood", correct: false },
+                { text: "Pure Blood", correct: false },
                 { text: "Fairlights", correct: false },
-                { text: "Fortuna major", correct: false },
+                { text: "Fortuna Major", correct: false },
                 { text: "Pinefresh", correct: true },
             ]
         },
@@ -346,10 +346,10 @@ const questions =
         {
             question: "Which of the following was a Christmas present sent to Harry by the Dursleys?",
             answers: [
-                { text: "A single tissue", correct: true },
-                { text: "A used battery", correct: false },
-                { text: "An old dictionary ", correct: false },
-                { text: "A 5p coin", correct: false },
+                { text: "A Single Tissue", correct: true },
+                { text: "A Used Battery", correct: false },
+                { text: "An Old Dictionary ", correct: false },
+                { text: "A 5p Coin", correct: false },
             ]
         },
         {

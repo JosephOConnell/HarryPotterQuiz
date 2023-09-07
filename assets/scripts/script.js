@@ -138,11 +138,11 @@ function showScore() {
     questionArea.style.display = "none";
     finalScore.style.display = "flex";
     if (scoreElement > 6) {
-        finalScore.innerText = `Well Done ${userName.value}\n You got ${scoreElement} correct out of 10`;
+        finalScore.innerText = `Well Done ${userName.value}\n You scored ${scoreElement} correct out of 10`;
     } else if (scoreElement > 4) {
-        finalScore.innerText = `Not bad ${userName.value}\n You got ${scoreElement} correct out of 10`;
+        finalScore.innerText = `Not bad ${userName.value}\n You scored ${scoreElement} correct out of 10`;
     } else {
-        finalScore.innerText = `Hey ${userName.value}\nDid you even read the books?\n You got ${scoreElement} correct out of 10`;
+        finalScore.innerText = `Hey ${userName.value}\nDid you even read the books?\n You scored ${scoreElement} correct out of 10`;
     }
     document.getElementById("score").innerText = 0;
 }
