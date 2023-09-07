@@ -1,4 +1,5 @@
 /*jshint esversion: 6 */
+/*global questions */
 
 // Variables called from the ids in index.html and style.css.
 const startButton = document.getElementById("start-btn");
@@ -14,7 +15,7 @@ const contactArea = document.getElementById("contacts-area");
 let scoreElement = parseInt(document.getElementById("score").innerText);
 const finalScore = document.getElementById("final-score");
 
-let shuffledQuestions, currentQuestionIndex;
+let shuffledQuestions, currentQuestionIndex, questionNumber;
 
 // Calls the start of the quiz when the start button is clicked.
 startButton.addEventListener("click", startGame);
@@ -138,11 +139,11 @@ function showScore() {
     questionArea.style.display = "none";
     finalScore.style.display = "flex";
     if (scoreElement > 6) {
-        finalScore.innerText = `Well Done ${userName.value}\n You scored ${scoreElement} correct out of 10`;
+        finalScore.innerText = `Well Done ${userName.value}\n You scored ${scoreElement} out of 10`;
     } else if (scoreElement > 4) {
-        finalScore.innerText = `Not bad ${userName.value}\n You scored ${scoreElement} correct out of 10`;
+        finalScore.innerText = `Not bad ${userName.value}\n You scored ${scoreElement} out of 10`;
     } else {
-        finalScore.innerText = `Hey ${userName.value}\nDid you even read the books?\n You scored ${scoreElement} correct out of 10`;
+        finalScore.innerText = `Hey ${userName.value}\nDid you even read the books?\n You scored ${scoreElement} out of 10`;
     }
     document.getElementById("score").innerText = 0;
 }

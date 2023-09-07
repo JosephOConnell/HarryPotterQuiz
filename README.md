@@ -6,7 +6,7 @@ Take this Harry Potter fan quiz to test you your knowledge.
 
 ![Am I Responsive](https://github.com/JosephOConnell/HarryPotterQuiz/blob/main/assets/images/README%20Images/hp-am-i-responsive.png)
 
-### About This Quiz
+## About This Quiz
 
 This quiz was created using JavaScript, HTML, and CSS.
 The main purpose of this project was to create a user-friendly quiz website dedicated to testing the users knowledge of the Harry Potter Book Series.
