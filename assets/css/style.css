@@ -88,6 +88,14 @@ a {
     margin-bottom: 10px;
 }
 
+/* Question Number */
+#question-number{
+    width: 70%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
 /* Score CSS */
 #score-area {
     width: 70%;
@@ -242,6 +250,10 @@ a {
         font-size: 2rem;
         margin-left: 5px;
         padding-left: 10px;
+    }
+
+    #question-number{
+        width: 100%;
     }
 
     .start-next-area {
